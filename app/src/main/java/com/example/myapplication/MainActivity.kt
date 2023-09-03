@@ -23,9 +23,11 @@ class MainActivity : AppCompatActivity() {
         binding.addButton.setOnClickListener{
             val intent = Intent(this, AddNoteActivity::class.java)
             startActivity(intent)
-
         }
+    }
 
-
+    override fun onResume(){
+        super.onResume()
+        notesAdapter.refreshData(db.getAllNotes())
     }
 }
