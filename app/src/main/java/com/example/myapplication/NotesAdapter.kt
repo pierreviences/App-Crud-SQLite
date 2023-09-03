@@ -14,7 +14,7 @@ class NotesAdapter(private var notes: List<Note>, context: Context) :
     class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val titleTextView: TextView = itemView.findViewById(R.id.titleTextView)
         val contentTextView: TextView = itemView.findViewById(R.id.contentEditText)
-        val udpateButton: ImageView = itemView.findViewById(R.id.updateSaveButton)
+        val udpateButton: ImageView = itemView.findViewById(R.id.updateButton)
 
     }
 
