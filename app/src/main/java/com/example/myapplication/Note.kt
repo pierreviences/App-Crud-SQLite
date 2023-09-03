@@ -1,4 +1,3 @@
 package com.example.myapplication
 
-class Note {
-}
+data class Note(val id: Int, val title:String, val content:String)
